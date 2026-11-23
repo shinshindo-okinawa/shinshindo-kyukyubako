@@ -21,6 +21,13 @@
     return res.json();
   }
 
+  // --- ご案内サイトへのリンク（HTMLに直接書いてあるので、読み込み失敗時も動く） ---
+  document.querySelectorAll('[data-guide]').forEach(a => {
+    a.target = '_blank';
+    a.rel = 'noopener';
+    attachTracking(a, 'guide_' + a.dataset.guide);
+  });
+
   try {
     const [tcb, videos] = await Promise.all([
       loadJson('../data/tcb-links.json'),
