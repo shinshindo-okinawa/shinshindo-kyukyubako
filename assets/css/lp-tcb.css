@@ -567,3 +567,118 @@ body {
   line-height: 1.6;
   color: var(--tcb-text-sub);
 }
+
+/* ---------- GUIDE LINKS（心身堂ご案内サイトへ・新しいタブ） ---------- */
+.tcb-sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.tcb-guide-links {
+  max-width: 612px;
+  width: calc(100% - 28px);
+  margin: 22px auto;
+  padding: 18px 16px 16px;
+  background: #fff;
+  border: 1px solid var(--tcb-beige);
+  border-radius: 14px;
+  box-shadow: var(--tcb-shadow);
+  box-sizing: border-box;
+}
+.tcb-guide-links h2 {
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--tcb-navy);
+  margin: 0 0 6px;
+  letter-spacing: 0.06em;
+  display: flex; align-items: center; gap: 8px;
+}
+.tcb-guide-links-lead {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--tcb-text);
+  margin: 0 0 6px;
+}
+.tcb-guide-links-tab {
+  display: inline-block;
+  font-size: 11.5px;
+  color: var(--tcb-text-sub);
+  background: var(--tcb-cream);
+  border: 1px dashed var(--tcb-beige);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin: 0 0 12px;
+}
+.tcb-guide-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+@media (min-width: 560px) {
+  .tcb-guide-list { grid-template-columns: 1fr 1fr; }
+}
+.tcb-guide-link {
+  position: relative;
+  display: block;
+  min-height: 56px;
+  padding: 10px 34px 10px 12px;
+  background: var(--tcb-cream);
+  border: 1px solid var(--tcb-beige-line);
+  border-radius: 10px;
+  color: var(--tcb-navy);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background .15s, border-color .15s;
+}
+.tcb-guide-link:hover,
+.tcb-guide-link:focus-visible {
+  background: #FFF3DE;
+  border-color: var(--tcb-wood-light);
+}
+.tcb-guide-who {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--tcb-orange-dk);
+  margin-bottom: 2px;
+}
+.tcb-guide-link b {
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.tcb-guide-ext {
+  position: absolute;
+  right: 12px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--tcb-wood);
+}
+.tcb-guide-all {
+  display: block;
+  margin: 12px 0 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--tcb-wood);
+  border-radius: 10px;
+  text-decoration: none;
+}
+.tcb-guide-all:hover,
+.tcb-guide-all:focus-visible { background: var(--tcb-wood-dark); }
+
+.tcb-referral-about,
+.tcb-emergency-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tcb-orange-dk);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.tcb-emergency-more { color: #B03E17; }
